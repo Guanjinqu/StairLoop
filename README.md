@@ -22,17 +22,17 @@ To make it easier for users to quickly use DNA StairLoop to evaluate its perform
 The decoder needs to be compiled before running DNA StairLoop:
 > python setup.py build_ext --inplace
 ### DNA StairLoop Test Usage
-Run the test.py file directly after installing the python package:
+Run the **test.py** file directly after installing the python package:
 > python test.py
 
 StairLoop will simulate encoding 4 blocks and add 3% error to the encoded sequence, and the sequencing depth of 10. And the sequence will be successfully decoded.
 
 ### DNA StairLoop Official Usage
 
-Run main_encode.py to encode:
+Run **main_encode.py** to encode:
 > python main_encode.py 
 
-Execute mpiexec for multi-process decoding, where the -n argument is the number of processes used:
+Execute **mpiexec** for multi-process decoding, where the **-n** argument is the number of processes used:
 > mpiexec -n 2 python main_decode.py
 
 After executing the above two commands, DNA StairLoop will encode the "data" file in the folder, pass it through a 3% error rate, 10 sequencing depth simulation channel, and successfully decode and restore the file to "decode_result".
@@ -62,7 +62,7 @@ The user can modify the config.yaml file to meet the requirements.
 - **test_mode**: Test mode. When turned on StairLoop passes through the simulated channel after encoding and generates sequences with an error rate.
 
 ### Decode sequencing files
-Since DNA StairLoop only accepts sequences in numpy array format. So for fastq format sequencing files, you need to run the get_mpi_file.py file first:
+Since DNA StairLoop only accepts sequences in numpy array format. So for fastq format sequencing files, you need to run the **get_mpi_file.py** file first:
 > python get_mpi_file.py
 
 Before running, you need to change the contents of lines 56 to 59: 
@@ -71,7 +71,7 @@ Before running, you need to change the contents of lines 56 to 59:
 - **mpi_nums**: Number of processes
 - **unit_nums**: The number of input sequences per process, usually the total number of sequences divided by the number of processes.
 
-real/get_mpi_file.py is the processing code for the sequencing file of our in vitro experiment.
+**real/get_mpi_file.py** is the processing code for the sequencing file of our in vitro experiment.
 
 ## License
 
