@@ -1,0 +1,22 @@
+Conv_mode: 1
+LDPC_mode: 1
+acc_mode: true
+block_num: 8
+extra_nums: 10
+high_err_mode: false
+index_length: 10
+input_file_name: data
+output_file_name: decode_result
+input_mode: true
+iterations: 3
+mpi_nums: 2
+msg_length: 10
+name: test
+output_mode: true
+pr_dict:
+  column: 0
+  pd: 0.01
+  pi: 0.01
+  ps: 0.01
+raw_length: 10
+test_mode: true

@@ -1,0 +1,9 @@
+scikit-commpy
+mpi4py
+biopython
+pyldpc
+scipy
+cython
+numpy
+tqdm
+pyyaml
