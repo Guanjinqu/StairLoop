@@ -21,11 +21,12 @@ To make it easier for users to quickly use DNA StairLoop to evaluate its perform
 
 The decoder needs to be compiled before running DNA StairLoop:
 > python setup.py build_ext --inplace
+Compilation time is usually less than 1 minute.
 ### DNA StairLoop Test Usage
 Run the **test.py** file directly after installing the python package:
 > python test.py
 
-StairLoop will simulate encoding 4 blocks and add 3% error to the encoded sequence, and the sequencing depth of 10. And the sequence will be successfully decoded.
+StairLoop will simulate encoding 4 blocks and add 3% error to the encoded sequence, and the sequencing depth of 10. And the sequence will be successfully decoded.Code runs usually take less than 10 minutes.
 
 ### DNA StairLoop Official Usage
 
