@@ -287,8 +287,9 @@ def log_map_decode_unit(codewords,trellis,msg_length,next_table,output_table,pr_
     if  mode== "exinfo" :
         Drift = 0
         D = 0
-    if  L_int==[]:
+    if  type(L_int) == list :
         L_int=zeros(len_msg)
+
 
     if Drift >=0 :
         d_max=Drift+D
